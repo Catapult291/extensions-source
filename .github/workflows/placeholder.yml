@@ -1,0 +1,14 @@
+name: Placeholder
+
+# Placeholder workflow: does nothing and never runs automatically.
+# Only exists as a stub in .github/workflows.
+on:
+  workflow_dispatch:
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    if: ${{ false }}
+    steps:
+      - name: No-op
+        run: echo "placeholder"
